@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Utkarsh Choudhary — AI &amp; ML Engineer</title>
+<meta name="description" content="Portfolio of Utkarsh Choudhary, AI &amp; ML Engineering student at LPU. Projects, skills, and contact.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="nav" id="top">
+  <a class="nav__mark" href="#top">UC<span class="nav__mark-dot">.</span></a>
+  <nav class="nav__links">
+    <a href="#about"><span class="nav__num">01</span>About</a>
+    <a href="#skills"><span class="nav__num">02</span>Skills</a>
+    <a href="#projects"><span class="nav__num">03</span>Projects</a>
+    <a href="#education"><span class="nav__num">04</span>Education</a>
+    <a href="#contact"><span class="nav__num">05</span>Contact</a>
+  </nav>
+  <a class="nav__cta" href="#contact">Get in touch</a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__field">
+      <canvas id="netCanvas"></canvas>
+    </div>
+    <div class="hero__content">
+      <p class="eyebrow"><span class="eyebrow__dot"></span>status: currently training — semester 03</p>
+      <h1 class="hero__title">
+        Utkarsh<br>
+        Choudhary<span class="hero__cursor">_</span>
+      </h1>
+      <p class="hero__role">AI &amp; ML Engineer <span class="hero__role-sep">/</span> B.Tech Student, LPU</p>
+      <p class="hero__bio">
+        Second-year AI &amp; ML engineering student who likes taking systems apart to see how the
+        weights move — from convolutional nets that read digits, to databases that hold a
+        campus together. Comfortable moving between a model's loss curve and a server's log file.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">View projects</a>
+        <a href="https://github.com/utkarshchoudhary2006" target="_blank" rel="noopener" class="btn btn--ghost">GitHub ↗</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section__head">
+      <span class="section__num">01</span>
+      <h2 class="section__title">About</h2>
+    </div>
+    <div class="about__grid">
+      <p class="about__lead">
+        I'm currently in my second year of a B.Tech in Artificial Intelligence &amp; Machine
+        Learning at Lovely Professional University, three semesters in and still enjoying the
+        part where a model finally converges.
+      </p>
+      <div class="about__body">
+        <p>
+          My interests sit at the intersection of applied machine learning and the systems
+          that keep software reliable — databases, networks, and the quieter engineering
+          work that doesn't show up in a demo but decides whether the demo works at all.
+          I build in Python most days, reach for C/C++ when I want to understand what's
+          actually happening under the hood, and I'm equally at home writing a SQL query
+          as I am tuning a neural network.
+        </p>
+        <p>
+          Outside of coursework, I like picking a small, well-scoped project — a digit
+          classifier, a recommender, a subnetting tool — and building it end to end,
+          because that's usually where the real learning happens.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section__head">
+      <span class="section__num">02</span>
+      <h2 class="section__title">Skills</h2>
+    </div>
+    <div class="skills__grid">
+      <div class="skill-group">
+        <h3 class="skill-group__title">Languages</h3>
+        <ul class="skill-list">
+          <li>Python</li>
+          <li>C</li>
+          <li>C++</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3 class="skill-group__title">Web</h3>
+        <ul class="skill-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3 class="skill-group__title">Data &amp; Systems</h3>
+        <ul class="skill-list">
+          <li>DBMS</li>
+          <li>SQL</li>
+          <li>Networking</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3 class="skill-group__title">Practice</h3>
+        <ul class="skill-list">
+          <li>Software Development</li>
+          <li>Project Management</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section__head">
+      <span class="section__num">03</span>
+      <h2 class="section__title">Projects</h2>
+    </div>
+    <div class="projects__list">
+
+      <article class="project">
+        <div class="project__index">P1</div>
+        <div class="project__body">
+          <h3 class="project__title">Handwritten Digit Recognizer</h3>
+          <p class="project__desc">
+            A convolutional neural network trained on MNIST that classifies handwritten
+            digits in real time. Paired it with a small Tkinter canvas so you can draw a
+            digit with your mouse and watch the model guess as you go.
+          </p>
+          <ul class="project__stack">
+            <li>Python</li><li>TensorFlow / Keras</li><li>Tkinter</li><li>NumPy</li>
+          </ul>
+        </div>
+        <a class="project__link" href="https://github.com/utkarshchoudhary2006" target="_blank" rel="noopener">Repo ↗</a>
+      </article>
+
+      <article class="project">
+        <div class="project__index">P2</div>
+        <div class="project__body">
+          <h3 class="project__title">Content-Based Movie Recommender</h3>
+          <p class="project__desc">
+            Recommendation engine that suggests similar titles using cosine similarity over
+            genre, cast, and plot-keyword vectors. Wrapped it in a lightweight HTML/CSS/JS
+            front end so results are searchable, not just printed to a console.
+          </p>
+          <ul class="project__stack">
+            <li>Python</li><li>Pandas</li><li>scikit-learn</li><li>JavaScript</li>
+          </ul>
+        </div>
+        <a class="project__link" href="https://github.com/utkarshchoudhary2006" target="_blank" rel="noopener">Repo ↗</a>
+      </article>
+
+      <article class="project">
+        <div class="project__index">P3</div>
+        <div class="project__body">
+          <h3 class="project__title">Student Record Management System</h3>
+          <p class="project__desc">
+            A console-based CRUD application for managing student records — admissions,
+            grades, and attendance — backed by a normalized MySQL schema. Built as a DBMS
+            project to get comfortable with joins, transactions, and schema design beyond
+            textbook examples.
+          </p>
+          <ul class="project__stack">
+            <li>C++</li><li>MySQL</li><li>DBMS Design</li>
+          </ul>
+        </div>
+        <a class="project__link" href="https://github.com/utkarshchoudhary2006" target="_blank" rel="noopener">Repo ↗</a>
+      </article>
+
+      <article class="project">
+        <div class="project__index">P4</div>
+        <div class="project__body">
+          <h3 class="project__title">LAN Subnet Calculator &amp; Simulator</h3>
+          <p class="project__desc">
+            A networking utility that takes an IP block and split requirements and outputs
+            a full subnetting plan — network/broadcast addresses, usable ranges, and a
+            simple diagram of the resulting topology. Grew out of a networking-fundamentals
+            module that made subnetting by hand feel worth automating.
+          </p>
+          <ul class="project__stack">
+            <li>Python</li><li>Networking</li><li>CLI Tools</li>
+          </ul>
+        </div>
+        <a class="project__link" href="https://github.com/utkarshchoudhary2006" target="_blank" rel="noopener">Repo ↗</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="section__head">
+      <span class="section__num">04</span>
+      <h2 class="section__title">Education</h2>
+    </div>
+    <ol class="timeline">
+      <li class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <p class="timeline__period">2024 — Present</p>
+          <h3 class="timeline__title">B.Tech, Artificial Intelligence &amp; Machine Learning</h3>
+          <p class="timeline__place">Lovely Professional University · currently in Year 2, Semester 3</p>
+        </div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <p class="timeline__period">Class XII</p>
+          <h3 class="timeline__title">Senior Secondary Education</h3>
+          <p class="timeline__place">Vijay Central Academy · Jaipur, Rajasthan</p>
+        </div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <p class="timeline__period">Class X</p>
+          <h3 class="timeline__title">Secondary Education</h3>
+          <p class="timeline__place">St. Anselm's North City School · Niwaru, Jaipur, Rajasthan</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--contact" id="contact">
+    <div class="section__head">
+      <span class="section__num">05</span>
+      <h2 class="section__title">Contact</h2>
+    </div>
+    <div class="contact">
+      <p class="contact__lead">
+        Open to internships, collaborations, and interesting problems. The fastest way to
+        reach me is email — the phone is next best.
+      </p>
+      <div class="contact__grid">
+        <a class="contact__card" href="mailto:cubesilent119@gmail.com">
+          <span class="contact__label">Email</span>
+          <span class="contact__value">cubesilent119@gmail.com</span>
+        </a>
+        <a class="contact__card" href="tel:+916375343993">
+          <span class="contact__label">Phone</span>
+          <span class="contact__value">+91 63753 43993</span>
+        </a>
+        <a class="contact__card" href="https://github.com/utkarshchoudhary2006" target="_blank" rel="noopener">
+          <span class="contact__label">GitHub</span>
+          <span class="contact__value">utkarshchoudhary2006 ↗</span>
+        </a>
+        <a class="contact__card" href="https://www.linkedin.com/in/utkarsh-choudhary-582b1b37a/" target="_blank" rel="noopener">
+          <span class="contact__label">LinkedIn</span>
+          <span class="contact__value">utkarsh-choudhary ↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Designed &amp; built by Utkarsh Choudhary.</p>
+  <a href="#top" class="footer__top">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
